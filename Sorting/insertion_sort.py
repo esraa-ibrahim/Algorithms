@@ -6,8 +6,10 @@ elements = map(int, raw_input('Enter your array elements: ').split())
 
 for i in range(1, len(elements)):
     j = i
-    while j > 0 and elements[j-1] > elements[j]:
-        elements[j], elements[j-1] = elements[j-1], elements[j]
+    key = elements[i]
+    while j > 0 and elements[j-1] > key:
+        elements[j] = elements[j-1]
         j = j-1
+    elements[j] = key
 
 print "Sorted array elements: ", elements
