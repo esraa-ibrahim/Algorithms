@@ -9,6 +9,5 @@ for i in range(1, len(elements)):
     while j > 0 and elements[j-1] > elements[j]:
         elements[j], elements[j-1] = elements[j-1], elements[j]
         j = j-1
-    print elements
 
-print "Sorted array elements: ", elements  
+print "Sorted array elements: ", elements
